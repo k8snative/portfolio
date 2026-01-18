@@ -116,7 +116,7 @@
 
    			<div class="intro-info">
 
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+   				<img src="images/Farrukh-fida-profile-pic.jpeg" alt="Profile Picture" style="width: 180px; height: auto;">
 
    				<p class="lead">Experienced DevOps Engineer skilled in automating CI/CD, 
 					containerization, and enhancing collaboration between teams for 
@@ -276,36 +276,36 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-   			<a href="Farrukh-Fida-cv.pdf" title="Download CV" class="button button-primary" target="_blank">Download CV</a>
+   			<!-- <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a> -->
+   			<a href="Farrukh_Fida_Resume_2026.pdf" title="Download CV" class="button button-primary" target="_blank">Download CV</a>
    		</div>   		
    	</div>
 
    </section> <!-- /process-->    
 
    	<!-- Portfolio Section
-   ================================================== -->
+   ================================================== 
 	<section id="portfolio">
 
 		<div class="row section-intro">
-   		<div class="col-twelve">
+   		<div class="col-twelve"> -->
 
-   			<h5>Portfolio</h5>
+   			<!--<h5>Portfolio</h5>
    			<h1>Check Out Some of My Works.</h1>
 
    			<p class="lead" style="text-align: left;">Welcome to my portfolio, where DevOps and Solution Architecture meet! Explore a diverse range of projects that showcase my expertise in DevOps practices and Solution Architecture solutions. From orchestrating seamless CI/CD pipelines to designing robust cloud-based architectures, these projects represent my passion for bridging the gap between development and infrastructure. Whether you're interested in my DevOps journey or curious about my architectural designs, you'll find a wealth of insights here. Feel free to explore, and don't hesitate to reach out for further discussions or collaborations. Enjoy the exploration of my DevOps and Solution Architect endeavors!</p>
+		-->
+   	<!--	</div>   		
+   	</div> /section-intro--> 
 
-   		</div>   		
-   	</div> <!-- /section-intro--> 
+   	<!-- <div class="row portfolio-content">
 
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
+   		<div class="col-twelve"> -->
 
    			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+	         <!-- <div id="folio-wrapper" class="block-1-2 block-mob-full stack"> -->
 
-	         	<div class="bgrid folio-item">
+	         	<!--<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/liberty.jpg" alt="Takaful Bazaar">
 	                  <a href="#modal-01" class="overlay">	                  	           
@@ -319,9 +319,9 @@
 	                     </div>                    
 	                  </a>
 	               </div>	               
-	        		</div> <!-- /folio-item -->
+	        	</div> /folio-item -->
 
-	        		<div class="bgrid folio-item">
+	        	 <!--	<div class="bgrid folio-item">
 	               <div class="item-wrap">
 	               	<img src="images/portfolio/shutterbug.jpg" alt="Rygen">
 	               	<a href="#modal-02" class="overlay">              		                  
@@ -335,7 +335,7 @@
 	                     </div>                    
 	                  </a>
 	               </div>
-	        		</div> <!-- /folio-item -->
+	        		</div> /folio-item -->
 
 	           <!-- <div class="bgrid folio-item">
 	               <div class="item-wrap">
@@ -605,6 +605,247 @@
 
    		</div> <!-- /resume-header -->
 
+		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Senior Manager DevOps</h3>
+	   					<p>May 2024 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+						<a href="https://merisehat.pk/" target="_blank"><h4>Meri Sehat (Karachi, Pakistan)</h4></a>
+	   					<p style="margin-bottom: 5px;">
+							<ul style="list-style-type: square;">
+  								<li>
+    								<h5 style="margin: 0;">Architecture Decisions</h5>
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Why EC2 Auto Scaling Groups for Laravel and ECS for Next.js</strong><br>
+        								The Laravel backend relied on long-running PHP-FPM processes, background workers,
+        								and filesystem assumptions that made container restarts disruptive. Although this
+        								could have been addressed through EFS-backed storage and SQS-based queues, the
+        								required application refactoring and added complexity were not justified at the
+        								time. I had already implemented and operated fully containerized ECS-based
+        								architectures in other projects, so this decision was driven by pragmatism rather
+        								than unfamiliarity. I therefore chose EC2 Auto Scaling Groups to preserve stability
+        								while still enabling horizontal scaling and controlled deployments.
+      									</li>
+    									</ul>
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Why RDS Multi-AZ, Read Replicas, and RDS Proxy</strong><br>
+        								The MySQL database layer was designed for high availability and connection stability. 
+										Multi-AZ ensured resilience against infrastructure failures, while read replicas supported
+										 read scaling and reduced load on the primary instance. RDS Proxy was 
+										 introduced to manage connection pooling and prevent connection storms during deployment 
+										 events or traffic spikes, significantly improving application stability and database 
+										 failover behavior. This design balanced availability, performance, 
+										 and operational simplicity without over-engineering.
+      									</li>
+    									</ul>
+
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Why Terraform Everywhere</strong><br>
+        								All infrastructure was provisioned using Terraform and managed in version control to eliminate manual
+										 configuration drift, enforce consistency across environments, and provide clear visibility into 
+										 infrastructure changes. This approach enabled controlled evolution of the platform, simplified reviews
+										  and audits, and reduced the risk of accidental resource creation or unmanaged cost growth. 
+										  Infrastructure changes became predictable, reviewable, and reversible.
+      									</li>
+    									</ul>
+
+  								</li>
+							</ul>
+
+
+							<ul style="list-style-type: square;">
+  								<li>
+    								<h5 style="margin: 0;">CI/CD & Automation</h5>
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Why Jenkins and AWS CodePipeline Together</strong><br>
+        								A hybrid CI/CD approach was adopted to leverage the strengths of both tools. Jenkins was used where 
+										flexibility and complex logic were required, such as multi-technology pipelines and custom automation 
+										workflows. AWS CodePipeline and CodeBuild were used for tightly integrated AWS-native deployments, 
+										reducing operational overhead and improving reliability for cloud-centric workflows. This pragmatic 
+										choice avoided tool dogmatism and focused on delivery efficiency.
+      									</li>
+    									</ul>
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Why Blue-Green Deployments Mattered for the Business</strong><br>
+        								Blue-green deployments were implemented to eliminate downtime and reduce deployment risk 
+										for customer-facing applications. This allowed new versions to be validated in 
+										production-like conditions before traffic cutover, ensuring rapid rollback in case of issues. 
+										From a business perspective, this significantly reduced release anxiety, improved deployment 
+										confidence, and enabled more frequent releases without impacting users.
+      									</li>
+    									</ul>
+
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Automated Application Cloning and White-Labeling</strong><br>
+        								Before automation, creating a new Laravel application instance required manual cloning, configuration 
+										changes, and database preparation, often taking hours and introducing inconsistency. I designed a 
+										Jenkins-triggered automation that accepted parameters for source and target applications and performed 
+										a complete, repeatable cloning and white-labeling process. This reduced setup time to approximately 
+										1.5 minutes while ensuring consistency, auditability, and reduced human error.
+      									</li>
+    									</ul>
+
+  								</li>
+							</ul>
+
+							<ul style="list-style-type: square;">
+  								<li>
+    								<h5 style="margin: 0;">Security & Incident Response</h5>
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">IAM Credential Leak Investigation and Remediation</strong><br>
+        								Repeated AWS security alerts indicated compromised IAM credentials attempting to access S3. Using 
+										CloudTrail analysis, I identified that sensitive credentials were embedded in a React frontend build 
+										via environment variables, making them publicly accessible in compiled JavaScript files. The root 
+										cause was a misunderstanding of how frontend build systems expose environment variables. I redesigned 
+										secret handling to enforce server-side access through Next.js and Laravel, eliminating client-side 
+										exposure and preventing further incidents.
+      									</li>
+    									</ul>
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Shift-Left Security Practices</strong><br>
+        								Static code analysis and dependency vulnerability scanning were integrated directly into pull request workflows. 
+										Developers received immediate feedback during PR reviews, allowing issues to be addressed early rather than 
+										after deployment. This reduced security debt, improved code quality, and shifted responsibility for security 
+										closer to development rather than treating it as a post-deployment concern.
+      									</li>
+    									</ul>
+
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Compliance Coordination and Ownership Boundaries</strong><br>
+        								I coordinated with external vendors supporting ISO 27001 and HIPAA certification efforts and assisted PCI-DSS audits. 
+										DevOps ownership focused on infrastructure hardening, secure configurations, access controls, and remediation of 
+										identified vulnerabilities, while vendors handled formal compliance documentation and assessments. This clear 
+										separation ensured audit readiness without slowing engineering delivery.
+      									</li>
+    									</ul>
+
+  								</li>
+							</ul>
+
+
+							<ul style="list-style-type: square;">
+  								<li>
+    								<h5 style="margin: 0;">Cost Optimization</h5>
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">EventBridge-Driven Environment Scheduling</strong><br>
+        								To reduce unnecessary cloud spend, non-production environments were automatically shut down after 
+										business hours and restored before office hours using EventBridge and Lambda functions written 
+										in Python. This approach maintained developer productivity while significantly reducing idle infrastructure costs.
+      									</li>
+    									</ul>
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">CloudFront Egress Cost Incident and Mitigation</strong><br>
+        								A major cost spike occurred when backend services unintentionally began consuming CloudFront endpoints intended for 
+										frontend users, rapidly exhausting free-tier request limits. Due to development constraints preventing immediate 
+										code changes, I implemented an infrastructure-level workaround that transparently routed backend traffic directly 
+										to S3 while preserving the same CloudFront URLs. This mitigated costs immediately without impacting application behavior.
+      									</li>
+    									</ul>
+
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Trade-offs and Honest Constraints</strong><br>
+        								While the long-term fix required application changes, the chosen solution prioritized business continuity and cost control 
+										under real-world constraints. This experience reinforced the importance of balancing ideal architectural purity with pragmatic, 
+										time-sensitive decisions.
+      									</li>
+    									</ul>
+
+  								</li>
+							</ul>
+
+
+							<ul style="list-style-type: square;">
+  								<li>
+    								<h5 style="margin: 0;">Observability & Reliability</h5>
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Proactive Alerting Philosophy</strong><br>
+        								Monitoring was designed to detect issues before users reported them. Application errors, infrastructure health, 
+										and resource thresholds were continuously monitored to surface actionable signals rather than noisy alerts.
+    									</ul>
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Slack-First Alerting Strategy</strong><br>
+        								Critical alerts were routed directly to Slack to reduce response latency and improve visibility across teams. 
+										Email notifications were retained for audit and escalation purposes, but real-time collaboration happened 
+										in shared channels, improving accountability and response speed.
+      									</li>
+    									</ul>
+
+
+
+
+    									<ul style="list-style-type: circle; margin-top: 5px;">
+      									<li>
+        								<strong style="text-decoration: underline;">Reduced MTTR Through Centralized Observability</strong><br>
+        								By combining CloudWatch metrics and alarms with Grafana dashboards, Loki-based log aggregation, and node-level monitoring, 
+										teams gained a centralized view of system health. This significantly reduced mean time to detect and resolve incidents, 
+										enabling faster root-cause analysis and more reliable operations.
+      									</li>
+    									</ul>
+
+  								</li>
+							</ul>
+						</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
    		<div class="col-twelve">
 
    			<div class="timeline-wrap">
@@ -617,13 +858,13 @@
 
 	   				<div class="timeline-header">
 	   					<h3>DevOps Engineer</h3>
-	   					<p>April 2023 - Present</p>
+	   					<p>April 2023 - April 2024</p>
 	   				</div>
 
 	   				<div class="timeline-content">
 						<a href="https://takafulbazaar.pk/" target="_blank"><h4>Takaful Bazaar (Karachi, Pakistan)</h4></a>
 	   					<p style="margin-bottom: 5px;">Achievements:
-							<li style="margin-top: 0;"> Have Architect a solution on AWS cloud for Takaful Bazaar's application version 2. (<a href="https://k8snative.github.io/cloudformation/ " target="_blank">click here for architecture diagram</a>) </li>
+							<li style="margin-top: 0;"> Have Architect a solution on AWS cloud for Takaful Bazaar's application version 2. </li>
 							<li style="margin-top: 0;"> After Architecting write complete IaC (Infrastructure as code), following are brief description: </li>
 							<li style="margin-top: 0; padding-left: 30px;"> Setup complete CI/CD pipeline (CI on bitbucket and CD on AWS codepipeline). </li>
 							<li style="margin-top: 0; padding-left: 30px;"> Implemented AWS codebuild to build docker images and push them to ECR. </li>
